@@ -60,8 +60,8 @@ void picking_point()
 			}
 		}
 	for (int i = 0; i < 9; i++)
-		line(p[i].x*SCREEN_BASE + SCREEN_BASE / 2, p[i].y*SCREEN_BASE + SCREEN_BASE / 2, p[i + 1].x*SCREEN_BASE + SCREEN_BASE / 2, p[i + 1].y*SCREEN_BASE + SCREEN_BASE / 2);
-	line(p[0].x*SCREEN_BASE + SCREEN_BASE / 2, p[0].y*SCREEN_BASE + SCREEN_BASE / 2, p[9].x*SCREEN_BASE + SCREEN_BASE / 2, p[9].y*SCREEN_BASE + SCREEN_BASE / 2);
+		line(p[i].x*SCREEN_BASE + SCREEN_BASE / 2, p[i].y*SCREEN_BASE + SCREEN_BASE / 2, p[i + 1].x*SCREEN_BASE + SCREEN_BASE / 2, p[i + 1].y*SCREEN_BASE + SCREEN_BASE / 2);//Connect 0-8 points in turn
+	line(p[0].x*SCREEN_BASE + SCREEN_BASE / 2, p[0].y*SCREEN_BASE + SCREEN_BASE / 2, p[9].x*SCREEN_BASE + SCREEN_BASE / 2, p[9].y*SCREEN_BASE + SCREEN_BASE / 2);//Connect 0,9 points
 	getchar();
 	printf("\n\n\n\n");
 	for (int i = 0; i < 10; i++)
